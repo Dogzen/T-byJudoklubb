@@ -1,61 +1,183 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: blue;
-  width: 80%;
-  margin-left: 10%;
+  background-color: #ffffff;
+  height: 100%;
 }
 
-header {
+.nav {
   display: flex;
-  justify-content: space-between;
-  background-color: white;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
-  height: 100px;
+  height: 200px;
+  background-color: white;
+}
+
+.navflex {
+display: flex;
+justify-content: space-between;
+width: 25%;
+font-size: 15px;
+font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
-  margin-left: 50px;
-}
-
-.banner {
-}
-
-nav {
-  display: flex;
-  background-color: rgb(226, 222, 222);
-  width: 100%;
-  height: 50px;
-}
-
-.nav-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-  margin-left: 70px;
-  width: 70%;
-  height: 100%;
-}
-
-.slides-flex {
-  display: flex;
-  justify-content: center;
-  background-color: red;
-  height: 500px;
+  height: 150px;
 }
 
 .slides {
-  background-color: green;
-  width: 90%;
-  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 2%;
+  width: 100%;
+  height: 510px;
 }
 
 .tävling {
-  width: 100%;
-  height: fit-content;
-  margin-top: 40px;
+  height: 100%;
 }
+
+.arrow-flex {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.fa-solid {
+  font-size: 20px;
+  color: rgb(240, 239, 239);
+}
+
+.text1-flex {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.452);
+  height: 40%;
+  width: 25%;
+  margin-top: 299px;
+  margin-right: 50%;
+}
+
+.text1 {
+  font-size: 20px;
+  color: white;
+  width: 90%;
+  height: 82%;
+}
+
+.nyheterflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  margin-top: 7%;
+}
+
+.nyheter {
+  font-size: 27px;
+  font-family: "Cuprum", sans-serif;
+}
+
+.nyheterhr {
+  width: 90%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #666;
+  border: 0 none;
+}
+
+.vit {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+.over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 13px;
+}
+
+.nyhettextflex {
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.nyhetrubrik {
+  font-size: 25px;
+  font-family: "Cuprum", sans-serif;
+}
+
+.nyhettext {
+  margin-top: 15px;
+  font-family: "Teko", sans-serif;
+  color: rgb(110, 110, 110);
+}
+
+.over:hover {
+  background-color: rgba(202, 199, 199, 0.418);
+  cursor: pointer;
+}
+
+footer {
+
+  width: 97%;
+  margin-left: 1.5%;
+  height: 200px;
+  background-color: black;
+}
+
+.iconflexflex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+
+}
+
+.iconflex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 70%;
+}
+
+.fa-brands {
+  font-size: 30px;
+  color: white;
+}
+
+.kontaktflex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-left: 10%;
+  color: white;
+}
+
