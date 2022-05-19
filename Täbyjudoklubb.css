@@ -9,12 +9,52 @@ body {
   height: 100%;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  margin-left: 1.5%;
+  height: 40px;
+  background-color: rgb(67, 67, 109);
+}
+
+.logflex {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+
+.titelflex {
+  width: 50%;
+}
+
+.loggain {
+  color: whitesmoke;
+  margin-right: 5%;
+}
+
+.skapakonto {
+  color: whitesmoke;
+  margin-right: 5%;
+}
+
+.titel {
+  margin-left: 10%;
+  font-size: 20px;
+  color: white;
+}
+
+.fa-book-atlas {
+  margin-right: 5%;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 200px;
+  height: 230px;
   background-color: white;
 }
 
@@ -36,8 +76,8 @@ font-family: 'Montserrat', sans-serif;
   justify-content: center;
   align-items: center;
   background-color: white;
-  margin-top: 2%;
   width: 100%;
+  margin-top: 20px;
   height: 510px;
 }
 
@@ -59,21 +99,28 @@ font-family: 'Montserrat', sans-serif;
 
 .text1-flex {
   position: absolute;
+  margin-right: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 25%;
+}
+
+.text1-box {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(51, 51, 51, 0.452);
+  width: 100%;
   height: 40%;
-  width: 25%;
-  margin-top: 299px;
-  margin-right: 50%;
+  border-radius: 10px;
 }
 
 .text1 {
   font-size: 20px;
   color: white;
   width: 90%;
-  height: 82%;
+  margin-bottom: 5%;
 }
 
 .nyheterflex {
@@ -128,9 +175,14 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .nyhettext {
+  font-size: 15px;
   margin-top: 15px;
   font-family: "Teko", sans-serif;
   color: rgb(110, 110, 110);
+}
+
+.datum {
+  color: rgb(135, 134, 134);
 }
 
 .over:hover {
@@ -139,45 +191,44 @@ font-family: 'Montserrat', sans-serif;
 }
 
 footer {
-
   width: 97%;
   margin-left: 1.5%;
-  height: 200px;
-  background-color: black;
+  height: 150px;
+  background-color: rgb(67, 67, 109);
 }
 
 .iconflexflex {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 50%;
+  height: 60%;
 
 }
 
 .iconflex {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 4%;
   width: 70%;
 }
 
 .fa-brands {
   font-size: 30px;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
 }
 
 .kontaktflex {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 
 .kontakt {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
   margin-top: 2%;
-  margin-left: 10%;
   color: white;
 }
 
