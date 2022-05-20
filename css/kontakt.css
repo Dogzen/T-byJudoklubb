@@ -65,7 +65,7 @@ nav {
 .personuppgifterflex {
   display: flex;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 1%;
   width: 100%;
   font-size: 25px;
 }
@@ -73,10 +73,10 @@ nav {
 .infoflex {
   display: flex;
   justify-content: start;
-  margin-top: 4%;
+  margin-top: 2%;
   width: 80%;
   margin-left: 10%;
-  height: 270px;
+  height: 220px;
 }
 
 .infotextflex {
@@ -92,7 +92,24 @@ nav {
   width: 50%;
 }
 
+h1 {
+  font-size: 25px;
+}
+
+.karta {
+  width: 30%;
+  margin-left: 35%;
+}
+
+.karta:hover {
+  margin-left: 11%;
+  width: 28%;
+  position: absolute;
+}
+
 .valideraknapp {
+  height: 100%;
+  width: 100%;
   outline: none;
   border: none;
   background-color: rgba(128, 128, 128, 0);
@@ -107,7 +124,7 @@ nav {
 }
 
 textarea {
-  height: 150px;
+  height: 100px;
   resize: none;
   margin-top: 20px;
 }
@@ -152,6 +169,11 @@ textarea {
   }
   .titelflex {
     width: 100%;
+  }
+  .karta:hover {
+    margin-left: 28%;
+    width: 50%;
+    position: absolute;
   }
 }
 
