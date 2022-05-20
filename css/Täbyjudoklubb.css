@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,13 +19,17 @@ nav {
   background-color: rgb(67, 67, 109);
 }
 
-.logflex {
-  display: flex;
-  justify-content: end;
-  width: 50%;
+.fa-bars {
+  display: none;
 }
 
 .titelflex {
+  width: 50%;
+}
+
+.logflex {
+  display: flex;
+  justify-content: end;
   width: 50%;
 }
 
@@ -48,6 +53,7 @@ nav {
 
 .fa-book-atlas {
   margin-right: 5%;
+  font-size: 20px;
 }
 
 .nav {
@@ -59,54 +65,100 @@ nav {
   background-color: white;
 }
 
-.kontaktaoss {
+.länk {
   text-decoration: none;
   color: black;
 }
 
 .navflex {
-display: flex;
-justify-content: space-between;
-width: 25%;
-font-size: 15px;
-font-family: 'Montserrat', sans-serif;
-list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
 }
 
 .logo {
   height: 150px;
 }
 
-.slides {
-  display: flex;
+.slideshow-container {
+  max-width: 1200px;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-  margin-top: 20px;
-  height: 510px;
+  margin: auto;
 }
 
-.tävling {
-  height: 100%;
+.mySlides {
+  display: none;
 }
 
-.arrow-flex {
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
 }
 
 .fa-solid {
-  font-size: 20px;
   color: rgb(240, 239, 239);
 }
 
 .text1-flex {
   position: absolute;
-  margin-right: 50%;
+  margin-left: 10%;
   display: flex;
   flex-direction: column-reverse;
   height: 100%;
@@ -119,7 +171,8 @@ list-style: none;
   align-items: center;
   background-color: rgba(51, 51, 51, 0.452);
   width: 100%;
-  height: 40%;
+  height: 35%;
+  margin-bottom: 1%;
   border-radius: 10px;
 }
 
@@ -173,6 +226,7 @@ list-style: none;
 
 .nyhettextflex {
   margin-left: 10%;
+  width: 60%;
   margin-top: 50px;
 }
 
@@ -209,7 +263,6 @@ footer {
   justify-content: center;
   width: 100%;
   height: 60%;
-
 }
 
 .iconflex {
@@ -241,29 +294,122 @@ footer {
   list-style: none;
 }
 
-.logflex {
-display: flex;
-justify-content: end;
-width: 50%;
+.dropdown {
+  display: none;
+  position: relative;
+  margin-left: 3%;
+  font-size: 25px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 1000%;
+  background-color: rgb(228, 226, 226);
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: none;
+}
+.dropdown-content a {
+  display: none;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #ffffff;
+  background-color: #00a4bd;
 }
 
-.titelflex {
-width: 50%;
+@media screen and (max-width: 1000px) {
+  .dropdown-content a {
+    display: block;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .navflex {
+    display: none;
+  }
+  .text1-box {
+    height: 100%;
+  }
+  .kontakt {
+    font-size: 12px;
+  }
+  .fa-bars {
+    display: block;
+  }
+  nav {
+    height: 70px;
+  }
+  .titel {
+    font-size: 30px;
+  }
+  .skapakonto {
+    font-size: 20px;
+  }
+  .loggain {
+    font-size: 20px;
+  }
+  .fa-solid {
+    font-size: 30px;
+  }
 }
 
-.loggain {
-color: whitesmoke;
-margin-right: 5%;
+@media screen and (max-width: 600px) {
+  .skapakonto {
+    display: none;
+  }
+  .loggain {
+    display: none;
+  }
+  .fa-book-atlas {
+    display: none;
+  }
+  .titelflex {
+    width: 100%;
+  }
+  .logflex {
+    display: none;
+  }
+  .text1 {
+    font-size: 15px;
+  }
+  .kontakt {
+    font-size: 12px;
+    width: 100%;
+  }
+  .logo {
+    height: 100px;
+  }
+  .nav {
+    height: 150px;
+  }
+  .nyhettextflex {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .iconflex {
+    width: 90%;
+  }
 }
 
-.skapakonto {
-color: whitesmoke;
-margin-right: 5%;
+@media screen and (max-width: 500px) {
+  .text1 {
+    font-size: 10px;
+  }
+  .kontakt {
+    font-size: 8px;
+  }
 }
 
-.titel {
-margin-left: 10%;
-font-size: 20px;
-color: white;
-text-decoration: none;
+@media screen and (max-width: 300px) {
+  .text1 {
+    font-size: 4px;
+  }
 }

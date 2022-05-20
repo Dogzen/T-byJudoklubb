@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Täby Judoklubb</title>
-    <link rel="stylesheet" href="/css/skapakonto.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/322f7d26ca.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/css/kontakt.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/322f7d26ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/javascript/email-validation.js"></script>
+  </head>
+  <body onload="document.text1.focus()">
     <nav>
-        <div class="titelflex">
-            <h1>
-                <a class="titel" href="Täbyjudoklubb.html">Täby Judoklubb</a>
-            </h1>
-        </div>
-        <div class="logflex">
-            <i class="fa-solid fa-book-atlas"></i>
-            <div class="loggain">Logga in</div>
-        </div>
+      <div class="titelflex">
+        <h1>
+          <a class="titel" href="Täbyjudoklubb.html">Täby Judoklubb</a>
+        </h1>
+      </div>
+      <div class="logflex">
+        <i class="fa-solid fa-book-atlas"></i>
+        <div class="loggain">Logga in</div>
+      </div>
     </nav>
     <div class="kontoflex">
-        <div class="personuppgifterflex">
-            <div>Personuppgifter</div>
+      <div class="personuppgifterflex">
+        <div>Kontakt</div>
+      </div>
+      <div class="infoflex">
+        <div class="infotextflex">
+          <div class="kontotext">Förnamn:</div>
+          <div class="kontotext">Efternamn:</div>
+          <div class="kontotext">E-post:</div>
+          <div class="kontotextmeddelande">Meddelande:</div>
         </div>
-        <div class="infoflex">
-            <div class="infotextflex">
-                <div class="kontotext">Förnamn:</div>
-                <div class="kontotext">Efternamn:</div>
-                <div class="kontotext">E-post:</div>
-                <div class="kontotext">Meddelande:</div>
-            </div>
-            <div class="inputflex2">
-                <input type="text" class="input">
-                <input type="text" class="input">
-                <input type="text" class="input">
-                <input type="text" class="input meddelande">
-            </div>
+        <div class="inputflex2">
+          <input type="text" class="input" />
+          <input type="text" class="input" />
+          <form name="form1" action="#">
+            <input type="email" name="text1" class="input" />
+          </form>
+          <textarea></textarea>
         </div>
-        <div class="skapakontoflex">
-            <div class="skapakontoknapp over">
-                <div>Skapa konto</div>
-            </div>
+      </div>
+      <div class="skickaflex">
+        <div class="skicka over">
+          <input
+            class="valideraknapp"
+            type="submit"
+            name="Validate"
+            value="Validate"
+            onclick="ValidateEmail(document.form1.text1)"
+          />
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
