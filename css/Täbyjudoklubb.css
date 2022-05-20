@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {
@@ -37,12 +36,14 @@ nav {
 .skapakonto {
   color: whitesmoke;
   margin-right: 5%;
+  text-decoration: none;
 }
 
 .titel {
   margin-left: 10%;
   font-size: 20px;
   color: white;
+  text-decoration: none;
 }
 
 .fa-book-atlas {
@@ -58,12 +59,18 @@ nav {
   background-color: white;
 }
 
+.kontaktaoss {
+  text-decoration: none;
+  color: black;
+}
+
 .navflex {
 display: flex;
 justify-content: space-between;
 width: 25%;
 font-size: 15px;
 font-family: 'Montserrat', sans-serif;
+list-style: none;
 }
 
 .logo {
@@ -210,6 +217,7 @@ footer {
   justify-content: space-between;
   margin-top: 4%;
   width: 70%;
+  list-style: none;
 }
 
 .fa-brands {
@@ -230,5 +238,32 @@ footer {
   width: 80%;
   margin-top: 2%;
   color: white;
+  list-style: none;
 }
 
+.logflex {
+display: flex;
+justify-content: end;
+width: 50%;
+}
+
+.titelflex {
+width: 50%;
+}
+
+.loggain {
+color: whitesmoke;
+margin-right: 5%;
+}
+
+.skapakonto {
+color: whitesmoke;
+margin-right: 5%;
+}
+
+.titel {
+margin-left: 10%;
+font-size: 20px;
+color: white;
+text-decoration: none;
+}
